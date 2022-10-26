@@ -22,3 +22,11 @@ label {
 #theForm input[type=submit] {
     background-color: green;
 }
+
+ul.product {
+    font-size: small;
+}
+
+ul.product li {
+    list-style-type: none;
+}
