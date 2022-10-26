@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\1329501\\Documents\\Work\\PersonalProjects\\Pluralsight\\MVCANGULARLOCAL\\NikeCopy\\NikeCopy.csproj",
+      "projectUniqueName": "C:\\Users\\1329501\\Documents\\Projects\\MvcAngularLocal\\NikeCopy\\NikeCopy.csproj",
       "projectName": "NikeCopy",
-      "projectPath": "C:\\Users\\1329501\\Documents\\Work\\PersonalProjects\\Pluralsight\\MVCANGULARLOCAL\\NikeCopy\\NikeCopy.csproj",
+      "projectPath": "C:\\Users\\1329501\\Documents\\Projects\\MvcAngularLocal\\NikeCopy\\NikeCopy.csproj",
       "packagesPath": "C:\\Users\\1329501\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\1329501\\Documents\\Work\\PersonalProjects\\Pluralsight\\MVCANGULARLOCAL\\NikeCopy\\obj\\",
+      "outputPath": "C:\\Users\\1329501\\Documents\\Projects\\MvcAngularLocal\\NikeCopy\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
