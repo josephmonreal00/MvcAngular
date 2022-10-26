@@ -20,3 +20,19 @@ NikeCopy\.vs\NikeCopy\v17
 NikeCopy\.vs\NikeCopy\FileContentIndex
 
 NikeCopy\.vs
+
+bin\Debug\net6.0
+
+bin\Debug\
+
+bin\
+
+obj
+
+*.dll
+
+Release
+
+NikeCopy\bin\Debug
+
+NikeCopy\bin\Debug\net6.0
