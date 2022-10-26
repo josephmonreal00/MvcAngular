@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "Pgi/EmEtrnrouuBLzHHSfmXXrkXh6/wb6SIl/cbbZbM=",
+  "Source": "NikeCopy",
+  "BasePath": "_content/NikeCopy",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "NikeCopy\\wwwroot",
+      "Source": "NikeCopy",
+      "ContentRoot": "C:\\Users\\1329501\\Documents\\Projects\\MvcAngularLocal\\NikeCopy\\wwwroot\\",
+      "BasePath": "_content/NikeCopy",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\1329501\\Documents\\Projects\\MvcAngularLocal\\NikeCopy\\wwwroot\\index.html",
+      "SourceId": "NikeCopy",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\1329501\\Documents\\Projects\\MvcAngularLocal\\NikeCopy\\wwwroot\\",
+      "BasePath": "_content/NikeCopy",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}
