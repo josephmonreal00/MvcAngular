@@ -28,7 +28,15 @@ namespace NikeCopy.Controllers
 
         [HttpPost("contact")]
         public IActionResult Contact(ContactViewModel model) {
-            return View();
+            if (!ModelState.IsValid) {
+                // Dont send email
+                return View();
+            }
+            else
+            {
+                // Send Email
+                return View();
+            }
         }
 
         public IActionResult About()
