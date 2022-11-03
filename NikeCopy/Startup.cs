@@ -11,34 +11,46 @@
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddRazorPages();
+            services.AddControllersWithViews();
+            //services.AddRazorPages();
         }
 
         public void Configure(WebApplication app, IWebHostEnvironment env)
         {
-            if (!app.Environment.IsDevelopment()) {
-                app.UseExceptionHandler("/Error");
-                app.UseHsts();
+            if (env.IsEnvironment("Development")) {
+                app.UseDeveloperExceptionPage();
+                //app.UseExceptionHandler("/Error");
+                //app.UseHsts();
             }
             //app.UseHttpsRedirection();
 
             // Looks through files to find index.html
             // changes internal path to where that file exists
-            app.UseDefaultFiles(); 
+            //app.UseDefaultFiles(); 
 
             // That path is then passed to UseStaticFiles()
             // and is able to find static files
             app.UseStaticFiles();
+
+            // Routing allows us to route individual calls that come into the server
             app.UseRouting();
+            //app.UseEndpoints(endpoints =>
+            //{
+            //    endpoints.MapGet("/", async context =>
+            //    {
+            //        await context.Response.WriteAsync("Hello World");
+            //    });
+            //});
+
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("Hello World");
+                endpoints.MapControllerRoute("Default",
+                    "/{controller}/{action}/{id?}",
+                    new { controller = "App", action = "Index" 
                 });
             });
-            app.UseAuthorization();
-            app.MapRazorPages();
+            //app.UseAuthorization();
+            //app.MapRazorPages();
             app.Run();
 
 
