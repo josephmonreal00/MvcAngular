@@ -1,4 +1,5 @@
-﻿body {
+﻿
+/*body {
     font-family: 'Segoe UI', Tahoma, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -13,7 +14,7 @@ input, textarea {
 
 label {
     font-size: 16px;
-}
+}*/
 
 /*#theForm {
     background-color: grey;
@@ -24,7 +25,7 @@ label {
     background-color: green;
 }*/
 
-ul.product {
+/*ul.product {
     font-size: small;
 }
 
@@ -78,4 +79,4 @@ menu>ul>li {
 
     menu>ul>li:last-of-type::after {
         content: '';
-    }
+    }*/

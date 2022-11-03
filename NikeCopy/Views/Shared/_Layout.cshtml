@@ -2,10 +2,11 @@
 <html>
 <head>
     <title>NikeCopy: @ViewBag.Title</title>
-    <link href="~/css/site.css" rel="stylesheet" />
+	<link href="~/css/site.css" rel="stylesheet" />
+	<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
-    <header>
+    <header class="container">
         <h1>Welcome to NikeCopy</h1>
         <menu>
             <ul>
@@ -15,13 +16,16 @@
             </ul>
         </menu>
     </header>
-    <section>
+    <section class="container">
         <h1>@ViewBag.Title</h1>
         @RenderBody()
     </section>
-    <footer>Copyright 2022</footer>
+    <footer class="container">
+        <div class="text-center">Copyright 2022</div>
+    </footer>
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="~/js/index.js"></script>
 
     @RenderSection("Scripts", false)

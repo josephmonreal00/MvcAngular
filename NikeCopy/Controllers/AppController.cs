@@ -42,6 +42,8 @@ namespace NikeCopy.Controllers
             {
                 // Send Email
                 _mailService.SendMessage("joemonreal23@icloud.com", "subject", "onemore");
+                ViewBag.UserMessage = "Mail Sent!";
+                ModelState.Clear();
                 return View();
             }
         }
