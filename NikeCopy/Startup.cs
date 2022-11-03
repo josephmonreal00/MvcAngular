@@ -11,8 +11,8 @@
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();
-            //services.AddRazorPages();
+            services.AddControllersWithViews().AddRazorRuntimeCompilation();
+            services.AddRazorPages();
         }
 
         public void Configure(WebApplication app, IWebHostEnvironment env)
@@ -21,6 +21,10 @@
                 app.UseDeveloperExceptionPage();
                 //app.UseExceptionHandler("/Error");
                 //app.UseHsts();
+            }
+            else
+            {
+                app.UseExceptionHandler("/error");
             }
             //app.UseHttpsRedirection();
 
@@ -44,6 +48,7 @@
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapRazorPages();
                 endpoints.MapControllerRoute("Default",
                     "/{controller}/{action}/{id?}",
                     new { controller = "App", action = "Index" 

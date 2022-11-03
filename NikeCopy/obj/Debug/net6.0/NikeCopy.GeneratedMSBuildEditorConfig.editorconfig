@@ -11,9 +11,17 @@ build_property.RootNamespace = NikeCopy
 build_property.ProjectDir = C:\Users\1329501\Documents\Projects\MvcAngularLocal\NikeCopy\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\1329501\Documents\Projects\MvcAngularLocal\NikeCopy
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/1329501/Documents/Projects/MvcAngularLocal/NikeCopy/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/1329501/Documents/Projects/MvcAngularLocal/NikeCopy/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/1329501/Documents/Projects/MvcAngularLocal/NikeCopy/Views/App/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwXEFib3V0LmNzaHRtbA==
