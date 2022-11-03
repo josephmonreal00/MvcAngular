@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using NikeCopy.Services;
 using NikeCopy.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,11 @@ namespace NikeCopy.Controllers
 {
     public class AppController : Controller
     {
+        private readonly INullMailService _mailService;
+        public AppController(INullMailService mailService)
+        {
+            _mailService = mailService;
+        }
         public IActionResult Index() {
             if (!ModelState.IsValid) { 
                 return View();
@@ -35,6 +41,7 @@ namespace NikeCopy.Controllers
             else
             {
                 // Send Email
+                _mailService.SendMessage("joemonreal23@icloud.com", "subject", "onemore");
                 return View();
             }
         }

@@ -1,4 +1,6 @@
-﻿namespace NikeCopy
+﻿using NikeCopy.Services;
+
+namespace NikeCopy
 {
     public class Startup
     {
@@ -11,6 +13,7 @@
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddTransient<INullMailService, NullMailService>();
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddRazorPages();
         }
